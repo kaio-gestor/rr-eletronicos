@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santa Tv | Aparelhos, Roteadores, Planos e Assistência Técnica</title>
     
+    <meta name="facebook-domain-verification" content="lqpfvgl9mr0zx32uepmwfrqxgh9mj1" />
+    
     <meta name="description" content="Na Santa Tv encontra os melhores aparelhos: TV V20, HTV9, UniTv V10 e S1. Oferecemos Roteadores, Assistência técnica para TV box queimado e Planos para TV Android.">
     <meta name="keywords" content="Santa Tv, TV V20, HTV9, UniTv V10, UniTv S1, roteadores, assistência técnica tv box, conserto tv box, planos tv box, tv android, Santa Ifigênia, entrega rápida sp">
     <meta name="author" content="Santa Tv">
@@ -56,13 +58,7 @@
         @keyframes btnShine { 100% { left: 125%; } }
         @keyframes popupFadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
         @keyframes neonPulse { 0% { filter: drop-shadow(0 0 5px var(--logo-red)); } 50% { filter: drop-shadow(0 0 20px var(--logo-red)) drop-shadow(0 0 30px #ff0000); } 100% { filter: drop-shadow(0 0 5px var(--logo-red)); } }
-
-        /* --- NOVA ANIMAÇÃO: Pulsação Suave para as Frases Chamaris --- */
-        @keyframes badgePulse {
-            0% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-            50% { transform: scale(1.02); box-shadow: 0 8px 15px rgba(255,255,255,0.08); }
-            100% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
-        }
+        @keyframes badgePulse { 0% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); } 50% { transform: scale(1.02); box-shadow: 0 8px 15px rgba(255,255,255,0.08); } 100% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); } }
 
         .animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; }
 
@@ -92,18 +88,15 @@
         .hero-text h1 span { color: var(--logo-red); } 
         .hero-text p { font-size: 21px; margin-bottom: 25px; color: var(--text-light); opacity: 0.9; line-height: 1.5; }
         
-        /* Badges de Confiança (Chamaris com Animação) */
         .trust-badges { display: flex; flex-direction: column; gap: 15px; margin-bottom: 35px; }
         .badge { 
             display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.05); padding: 12px 20px; 
             border-radius: 10px; border-left: 4px solid var(--whatsapp-green); font-size: 15px; font-weight: bold; color: #fff;
-            animation: badgePulse 3s infinite alternate ease-in-out; /* Adicionando o Pulso Leve */
+            animation: badgePulse 3s infinite alternate ease-in-out;
         }
-        /* Atraso orgânico nas frases pares para não pulsarem todas juntas */
         .badge:nth-child(even) { animation-delay: 1.5s; }
         .badge.red { border-left-color: var(--logo-red); }
 
-        /* --- Banner Principal Estático --- */
         .static-banner-wrapper { flex: 1; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 550px; position: relative; }
         .static-banner { width: 100%; height: auto; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(193, 39, 45, 0.4); border: 2px solid rgba(193, 39, 45, 0.5); transition: transform 0.5s ease, box-shadow 0.5s ease; }
         .static-banner:hover { transform: scale(1.02); box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 40px rgba(193, 39, 45, 0.6); }
@@ -132,7 +125,6 @@
         .products-section { padding: 80px 5%; text-align: center; }
         .section-title { font-size: 34px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2.5px; color: var(--logo-red); }
         
-        /* Faixa Chamaris Produtos com Animação */
         .product-badge-wrapper { margin-bottom: 50px; }
         .product-badge { 
             background: rgba(193, 39, 45, 0.15); color: #fff; padding: 10px 25px; border-radius: 30px; 
@@ -273,7 +265,7 @@
 
     <section class="middle-cta">
         <div class="middle-cta-content">
-            <h2>VISITE NOSSA LOJA HOJE MESMO!</h2>
+            <h2>VISITE A NOSSA LOJA HOJE MESMO!</h2>
             <p>A melhor tecnologia com o melhor atendimento da região.</p>
             <a href="https://share.google/C5IjDM7eBbhmcm5Ye" target="_blank" class="btn-location">ENCONTRE-NOS AGORA! ></a>
         </div>
@@ -381,11 +373,11 @@
     </section>
 
     <section class="reviews-section">
-        <h2 class="section-title" style="margin-bottom: 20px;">O que nossos clientes dizem</h2>
+        <h2 class="section-title" style="margin-bottom: 20px;">O que os nossos clientes dizem</h2>
         <div class="reviews-grid">
             <div class="review-card">
                 <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Cheguei na loja cheio de dúvidas e o atendimento foi espetacular. Me explicaram a diferença de todos os aparelhos com muita paciência. Recomendo demais!"</p>
+                <p class="review-text">"Cheguei à loja cheio de dúvidas e o atendimento foi espetacular. Explicaram-me a diferença de todos os aparelhos com muita paciência. Recomendo imenso!"</p>
                 <p class="review-author">- Carlos Eduardo</p>
             </div>
             <div class="review-card">
@@ -395,7 +387,7 @@
             </div>
             <div class="review-card">
                 <div class="review-stars">★★★★☆</div>
-                <p class="review-text">"Pesquisei muito na Santa Efigênia e aqui foi onde encontrei o preço mais justo sem enrolação. Aparelho original e funcionando liso. Voltarei para comprar outro!"</p>
+                <p class="review-text">"Pesquisei muito na Santa Efigênia e aqui foi onde encontrei o preço mais justo sem enrolação. Aparelho original e a funcionar liso. Voltarei para comprar outro!"</p>
                 <p class="review-author">- Rafael Oliveira</p>
             </div>
         </div>
@@ -409,22 +401,22 @@
             </div>
             <div class="footer-item">
                 <h4>📍 Nossa Loja Física</h4>
-                <p>Galeria São Pedro<br>R. Aurora, 178 - Loja 10<br>Santa Ifigênia, São Paulo - SP, 01209-000<br>Venha nos fazer uma visita!</p>
+                <p>Galeria São Pedro<br>R. Aurora, 178 - Loja 10<br>Santa Ifigênia, São Paulo - SP, 01209-000<br>Venha fazer-nos uma visita!</p>
             </div>
             <div class="footer-item">
                 <h4>🛠️ Garantia e Suporte</h4>
-                <p>Oferecemos garantia contra defeitos de fabricação e suporte especializado pós-venda para te ajudar com qualquer configuração.</p>
+                <p>Oferecemos garantia contra defeitos de fabrico e suporte especializado pós-venda para o ajudar com qualquer configuração.</p>
             </div>
         </div>
         <div class="footer-cta">
-            <h2 style="margin-bottom: 25px; text-transform: uppercase; color: #fff;">FALE CONOSCO AGORA MESMO!</h2>
+            <h2 style="margin-bottom: 25px; text-transform: uppercase; color: #fff;">FALE CONNOSCO AGORA MESMO!</h2>
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="btn-whatsapp btn-pulse-green">
                 <svg><use href="#icon-whatsapp"></use></svg> CHAME NO WHATSAPP
             </a>
         </div>
     </footer>
 
-    <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="float-wa" title="Fale conosco no WhatsApp">
+    <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="float-wa" title="Fale connosco no WhatsApp">
         <svg><use href="#icon-whatsapp"></use></svg>
     </a>
 
