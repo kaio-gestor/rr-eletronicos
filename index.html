@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TDD8LQMB');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa Tv | Aparelhos, Roteadores, Planos e Assistência Técnica</title>
+    
+    <meta name="description" content="Na Santa Tv encontra os melhores aparelhos: TV V20, HTV9, UniTv V10 e S1. Oferecemos Roteadores, Assistência técnica para TV box queimado e Planos para TV Android.">
+    <meta name="keywords" content="Santa Tv, TV V20, HTV9, UniTv V10, UniTv S1, roteadores, assistência técnica tv box, conserto tv box, planos tv box, tv android, Santa Ifigênia, entrega rápida sp">
+    <meta name="author" content="Santa Tv">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="pt-BR">
+    <meta name="theme-color" content="#C1272D">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://santa-tv.netlify.app/"> 
+    <meta property="og:title" content="Santa Tv - Venda, Planos e Assistência de Aparelhos">
+    <meta property="og:description" content="Aparelhos originais (TV V20, HTV9, UniTv), Roteadores, Planos para TV Android e Assistência Técnica para todas as marcas. Fale connosco!">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/1oqvOg_wzqdw95z13iJlyPWEr1boLGy59">
+    <meta property="og:site_name" content="Santa Tv">
+    <meta property="og:locale" content="pt_BR">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://santa-tv.netlify.app/">
+    <meta name="twitter:title" content="Santa Tv - Venda, Planos e Assistência de Aparelhos">
+    <meta name="twitter:description" content="Aparelhos originais (TV V20, HTV9, UniTv), Roteadores, Planos para TV Android e Assistência Técnica para todas as marcas.">
+    <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1oqvOg_wzqdw95z13iJlyPWEr1boLGy59">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --logo-red: #C1272D;       
+            --bg-dark: #1A1A1B;
+            --bg-card: #252526;
+            --text-light: #D9D0C1;     
+            --whatsapp-green: #25d366; 
+            --whatsapp-hover: #128c7e;
+            --secondary-cta: #D9D0C1;  
+            --secondary-cta-text: #1A1A1B; 
+            --star-color: #FFD700;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', sans-serif; }
+        html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+        body { background: linear-gradient(135deg, var(--bg-dark) 0%, #000000 100%); color: var(--text-light); overflow-x: hidden; line-height: 1.6; touch-action: manipulation; }
+
+        /* --- Animações Gerais --- */
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse-glow-green { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
+        @keyframes pulse-glow-bege { 0% { box-shadow: 0 0 0 0 rgba(217, 208, 193, 0.5); } 70% { box-shadow: 0 0 0 12px rgba(217, 208, 193, 0); } 100% { box-shadow: 0 0 0 0 rgba(217, 208, 193, 0); } }
+        @keyframes btnShine { 100% { left: 125%; } }
+        @keyframes popupFadeIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }
+        @keyframes neonPulse { 0% { filter: drop-shadow(0 0 5px var(--logo-red)); } 50% { filter: drop-shadow(0 0 20px var(--logo-red)) drop-shadow(0 0 30px #ff0000); } 100% { filter: drop-shadow(0 0 5px var(--logo-red)); } }
+
+        /* --- NOVA ANIMAÇÃO: Pulsação Suave para as Frases Chamaris --- */
+        @keyframes badgePulse {
+            0% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+            50% { transform: scale(1.02); box-shadow: 0 8px 15px rgba(255,255,255,0.08); }
+            100% { transform: scale(1); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        }
+
+        .animate-fade-in-down { animation: fadeInDown 1s ease-out forwards; }
+
+        /* --- Header --- */
+        header {
+            background: rgba(26, 26, 27, 0.95); backdrop-filter: blur(10px); position: fixed; width: 100%; top: 0; z-index: 1000;
+            display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; border-bottom: 2px solid var(--logo-red); 
+        }
+        .logo-container img { height: 55px; object-fit: contain; transition: height 0.3s; animation: neonPulse 2s infinite alternate; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: var(--text-light); text-decoration: none; font-weight: 700; transition: color 0.3s; font-size: 0.9rem; }
+        nav a:hover { color: var(--logo-red); }
+
+        .btn-whatsapp {
+            background: var(--whatsapp-green); color: white; padding: 12px 25px; border-radius: 30px;
+            text-decoration: none; font-weight: bold; display: inline-flex; align-items: center; justify-content: center;
+            gap: 10px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); white-space: nowrap;
+        }
+        .btn-whatsapp:hover { background: var(--whatsapp-hover); transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); }
+        .btn-whatsapp svg { width: 22px; height: 22px; fill: currentColor; }
+        .btn-pulse-green { animation: pulse-glow-green 2s infinite; }
+
+        /* --- Hero Section --- */
+        .hero { display: flex; align-items: center; justify-content: space-between; padding: 160px 5% 100px; min-height: 85vh; gap: 50px; }
+        .hero-text { flex: 1.2; max-width: 650px; opacity: 0; }
+        .hero-text h1 { font-size: 44px; font-weight: 900; line-height: 1.2; margin-bottom: 20px; color: #fff; }
+        .hero-text h1 span { color: var(--logo-red); } 
+        .hero-text p { font-size: 21px; margin-bottom: 25px; color: var(--text-light); opacity: 0.9; line-height: 1.5; }
+        
+        /* Badges de Confiança (Chamaris com Animação) */
+        .trust-badges { display: flex; flex-direction: column; gap: 15px; margin-bottom: 35px; }
+        .badge { 
+            display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.05); padding: 12px 20px; 
+            border-radius: 10px; border-left: 4px solid var(--whatsapp-green); font-size: 15px; font-weight: bold; color: #fff;
+            animation: badgePulse 3s infinite alternate ease-in-out; /* Adicionando o Pulso Leve */
+        }
+        /* Atraso orgânico nas frases pares para não pulsarem todas juntas */
+        .badge:nth-child(even) { animation-delay: 1.5s; }
+        .badge.red { border-left-color: var(--logo-red); }
+
+        /* --- Banner Principal Estático --- */
+        .static-banner-wrapper { flex: 1; display: flex; justify-content: center; align-items: center; width: 100%; max-width: 550px; position: relative; }
+        .static-banner { width: 100%; height: auto; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(193, 39, 45, 0.4); border: 2px solid rgba(193, 39, 45, 0.5); transition: transform 0.5s ease, box-shadow 0.5s ease; }
+        .static-banner:hover { transform: scale(1.02); box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 40px rgba(193, 39, 45, 0.6); }
+
+        /* --- Middle CTA --- */
+        .middle-cta {
+            text-align: center; padding: 90px 5%; background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80') center/cover fixed;
+            position: relative; border-top: 2px solid var(--logo-red); border-bottom: 2px solid var(--logo-red);
+        }
+        .middle-cta::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(26, 26, 27, 0.88); }
+        .middle-cta-content { position: relative; z-index: 1; }
+        .middle-cta h2 { font-size: 38px; margin-bottom: 15px; text-transform: uppercase; color: #fff; }
+        .middle-cta p { font-size: 20px; margin-bottom: 35px; color: var(--text-light); }
+        
+        .btn-location {
+            background: var(--secondary-cta); color: var(--secondary-cta-text); padding: 16px 38px; border-radius: 35px;
+            text-decoration: none; font-weight: 800; display: inline-flex; font-size: 1.15rem; box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            position: relative; overflow: hidden; transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            animation: pulse-glow-bege 2.5s infinite;
+        }
+        .btn-location::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,0.6), transparent); transform: skewX(-25deg); }
+        .btn-location:hover { background: #fff; transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.7), 0 0 10px rgba(217, 208, 193, 0.3); animation: none; }
+        .btn-location:hover::after { animation: btnShine 0.75s forwards; }
+
+        /* --- Products Section --- */
+        .products-section { padding: 80px 5%; text-align: center; }
+        .section-title { font-size: 34px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 2.5px; color: var(--logo-red); }
+        
+        /* Faixa Chamaris Produtos com Animação */
+        .product-badge-wrapper { margin-bottom: 50px; }
+        .product-badge { 
+            background: rgba(193, 39, 45, 0.15); color: #fff; padding: 10px 25px; border-radius: 30px; 
+            font-weight: bold; font-size: 15px; border: 1px solid rgba(193, 39, 45, 0.4); display: inline-block; 
+            animation: badgePulse 3s infinite alternate ease-in-out;
+        }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        
+        .product-card {
+            background: var(--bg-card); border-radius: 15px; overflow: hidden;
+            text-decoration: none; color: var(--text-light); transition: transform 0.4s, box-shadow 0.4s;
+            border: 1px solid rgba(217, 208, 193, 0.05); display: flex; flex-direction: column;
+        }
+        .product-card:hover { transform: translateY(-12px); box-shadow: 0 15px 35px rgba(0,0,0,0.6), 0 0 15px rgba(193, 39, 45, 0.3); border-color: rgba(193, 39, 45, 0.6); }
+        .product-image-wrapper { height: 260px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; padding: 20px; }
+        .product-card img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); }
+        .product-card:hover img { transform: scale(1.1); }
+        
+        .product-info { padding: 20px 25px 25px; flex-grow: 1; display: flex; flex-direction: column; text-align: left; }
+        .product-info h3 { font-size: 22px; margin-bottom: 12px; color: #fff; text-align: center; }
+        
+        .specs-list { list-style: none; margin-bottom: 20px; flex-grow: 1; font-size: 14px; color: #bbb; }
+        .specs-list li { margin-bottom: 6px; display: flex; align-items: flex-start; gap: 8px; }
+        .specs-list li::before { content: '✓'; color: var(--whatsapp-green); font-weight: bold; }
+        
+        .product-info p { font-size: 15px; color: var(--text-light); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; text-align: center; background: rgba(193, 39, 45, 0.2); padding: 12px; border-radius: 8px; border: 1px solid rgba(193, 39, 45, 0.4); transition: 0.3s; }
+        .product-card:hover .product-info p { background: var(--whatsapp-green); color: #fff; border-color: var(--whatsapp-green); }
+
+        /* --- Avaliações --- */
+        .reviews-section { padding: 40px 5% 80px; text-align: center; }
+        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .review-card { background: var(--bg-card); border-radius: 15px; padding: 30px; border: 1px solid rgba(217, 208, 193, 0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.2); text-align: left; }
+        .review-stars { color: var(--star-color); font-size: 20px; margin-bottom: 15px; letter-spacing: 2px; }
+        .review-text { font-size: 16px; font-style: italic; margin-bottom: 15px; color: #fff; }
+        .review-author { font-size: 14px; color: var(--logo-red); font-weight: bold; text-transform: uppercase; }
+
+        /* --- Modal --- */
+        .exit-modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(5px); z-index: 9999; display: none; align-items: center; justify-content: center; }
+        .exit-modal-content { background: #1A1A1B; border: 2px solid var(--logo-red); border-radius: 20px; padding: 40px; max-width: 550px; text-align: center; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(193, 39, 45, 0.3); animation: popupFadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; margin: 20px; }
+        .close-btn { position: absolute; top: 15px; right: 20px; font-size: 28px; color: var(--text-light); cursor: pointer; transition: color 0.3s; line-height: 1; padding: 10px; }
+        .close-btn:hover { color: var(--logo-red); }
+        .exit-modal-content h2 { font-size: 32px; color: #fff; margin-bottom: 15px; }
+        .exit-modal-content h2 span { color: var(--logo-red); }
+        .exit-modal-content p { font-size: 18px; color: var(--text-light); margin-bottom: 30px; line-height: 1.5; }
+
+        /* --- Rodapé Institucional --- */
+        footer { background: var(--bg-dark); border-top: 2px solid var(--logo-red); padding-top: 60px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; padding: 0 5% 40px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .footer-item h4 { color: #fff; font-size: 18px; margin-bottom: 15px; display: flex; align-items: center; justify-content: center; gap: 10px; }
+        .footer-item p { color: #aaa; font-size: 14px; line-height: 1.6; }
+        .footer-cta { text-align: center; padding: 40px 5%; background: rgba(0,0,0,0.4); }
+        
+        .float-wa { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 6px 20px rgba(0,0,0,0.5); z-index: 1000; text-decoration: none; transition: all 0.3s ease; }
+        .float-wa:hover { transform: scale(1.1) rotate(-10deg); box-shadow: 0 8px 25px rgba(0,0,0,0.6); }
+        .float-wa svg { width: 32px; height: 32px; fill: white; }
+
+        /* --- Mobile --- */
+        @media (max-width: 768px) {
+            header { padding: 12px 15px; }
+            .logo-container img { height: 40px; }
+            nav ul { display: none; } 
+            header .btn-whatsapp { padding: 10px 15px; font-size: 0.85rem; letter-spacing: -0.5px; }
+            header .btn-whatsapp svg { width: 18px; height: 18px; }
+            
+            .hero { flex-direction: column; text-align: center; padding-top: 130px; padding-bottom: 60px; gap: 40px; }
+            .hero-text h1 { font-size: 32px; margin-bottom: 20px; }
+            .hero-text p { font-size: 18px; margin-bottom: 20px; }
+            .trust-badges { align-items: center; }
+            .badge { font-size: 13px; text-align: left; width: 100%; }
+            
+            .exit-modal-content { padding: 30px 20px; }
+            .exit-modal-content h2 { font-size: 26px; }
+            
+            .product-info { text-align: center; }
+            .specs-list li { justify-content: center; text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDD8LQMB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <svg style="display: none;">
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+        </symbol>
+    </svg>
+
+    <div class="exit-modal-overlay" id="exitModal">
+        <div class="exit-modal-content">
+            <span class="close-btn" id="closeModal">×</span>
+            <h2>Já vai.....?? <span>🤔</span></h2>
+            <p>Cansado de aparelhos que não funcionam? Aqui na <strong>Santa Tv</strong> encontra os melhores com preço justo. Se eu fosse a si aproveitava!</p>
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vi%20o%20aviso%20no%20site%20e%20não%20quero%20perder%20esta%20chance!" target="_blank" class="btn-whatsapp btn-pulse-green" style="font-size: 1.2rem; padding: 15px 35px; width: 100%;">
+                <svg><use href="#icon-whatsapp"></use></svg> APROVEITAR AGORA
+            </a>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Santa Tv Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#tv-boxes">Aparelhos TV</a></li>
+                <li><a href="#routers">Roteadores</a></li>
+            </ul>
+        </nav>
+        <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="btn-whatsapp btn-pulse-green">
+            <svg><use href="#icon-whatsapp"></use></svg> Fale Connosco
+        </a>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text animate-fade-in-down">
+            <h1>A melhor loja de eletrônicos da <span>Santa Efigênia</span></h1>
+            <p>Venha conferir os melhores aparelhos para <strong>Series, Filmes, Futebol, 18++, Roteadores</strong>, e muito mais!</p>
+            
+            <div class="trust-badges">
+                <div class="badge red">🚀 Tv box e eletrônico entrega rápida em São Paulo.</div>
+                <div class="badge">💬 Atendimento imediato no whatsapp + suporte especializado.</div>
+                <div class="badge red">🛠️ Assistência técnica para seu tv box queimado de todas as marcas.</div>
+                <div class="badge">📺 Planos para seu TV box ou Tv Android, consulte condições.</div>
+            </div>
+
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="btn-whatsapp btn-pulse-green" style="font-size: 1.25rem; padding: 16px 45px;">
+                <svg><use href="#icon-whatsapp"></use></svg> GARANTIR OFERTAS AGORA!
+            </a>
+        </div>
+        
+        <div class="static-banner-wrapper">
+            <img src="banner-principal.png" alt="Banner Loja Física Santa Tv" class="static-banner">
+        </div>
+    </section>
+
+    <section class="middle-cta">
+        <div class="middle-cta-content">
+            <h2>VISITE NOSSA LOJA HOJE MESMO!</h2>
+            <p>A melhor tecnologia com o melhor atendimento da região.</p>
+            <a href="https://share.google/C5IjDM7eBbhmcm5Ye" target="_blank" class="btn-location">ENCONTRE-NOS AGORA! ></a>
+        </div>
+    </section>
+
+    <section class="products-section" id="tv-boxes">
+        <h2 class="section-title">Aparelhos para TV</h2>
+        
+        <div class="product-badge-wrapper">
+            <span class="product-badge">🚀 Entrega Rápida em SP & Suporte Imediato via WhatsApp</span>
+        </div>
+
+        <div class="product-grid">
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20aparelho%20TV%20V20.%20Qual%20o%20valor?" target="_blank" class="product-card">
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/15ZI5k-_msDP5NhNu7bTjS-9W7UUrq6UI" alt="TV V20"></div>
+                <div class="product-info">
+                    <h3>TV V20</h3>
+                    <ul class="specs-list">
+                        <li>Alta Qualidade de Imagem 4K</li>
+                        <li>Filmes e Séries Liberados</li>
+                        <li>Conexão Estável e Rápida</li>
+                    </ul>
+                    <p>FALE COM UM VENDEDOR</p>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20aparelho%20UniTv%20V10.%20Qual%20o%20valor?" target="_blank" class="product-card">
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1_gHEVkoJ-COKAliCLcjTfF474hCoNxc2" alt="UniTv V10"></div>
+                <div class="product-info">
+                    <h3>UniTv V10</h3>
+                    <ul class="specs-list">
+                        <li>Sem Mensalidade</li>
+                        <li>Sistema Fluido e Sem Travas</li>
+                        <li>Wi-Fi Dual Band Inteligente</li>
+                    </ul>
+                    <p>FALE COM UM VENDEDOR</p>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20aparelho%20HTV9.%20Qual%20o%20valor?" target="_blank" class="product-card">
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1flpagMw2hzNw_1bF-HjsjqW_f6iX_YTT" alt="HTV9"></div>
+                <div class="product-info">
+                    <h3>HTV9</h3>
+                    <ul class="specs-list">
+                        <li>Canais Esportivos e Futebol</li>
+                        <li>Resolução Ultra HD</li>
+                        <li>Fácil Configuração Plug & Play</li>
+                    </ul>
+                    <p>FALE COM UM VENDEDOR</p>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20aparelho%20UniTv%20S1.%20Qual%20o%20valor?" target="_blank" class="product-card">
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1JvLNpg5a1x6utttRQGAWJdntFyuGJ4a5" alt="UniTv S1"></div>
+                <div class="product-info">
+                    <h3>UniTv S1</h3>
+                    <ul class="specs-list">
+                        <li>Modelo Premium e Compacto</li>
+                        <li>Conteúdo 18+ Opcional</li>
+                        <li>Atualizações Automáticas</li>
+                    </ul>
+                    <p>FALE COM UM VENDEDOR</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="products-section" id="routers" style="padding-top: 20px;">
+        <h2 class="section-title">Roteadores de Alta Velocidade</h2>
+        <div class="product-grid">
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20Roteador%20Alta%20Performance.%20Qual%20o%20valor?" target="_blank" class="product-card">
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1kx4-eJs5Kn0vNXQ_KQfddiULCOPbRzyw" alt="Roteador Alta Performance"></div>
+                <div class="product-info">
+                    <h3>Roteador Alta Performance</h3>
+                    <ul class="specs-list">
+                        <li>Ideal para Jogos e Streaming 4K</li>
+                        <li>Tecnologia Gigabit Ethernet</li>
+                        <li>Antenas de Alto Ganho</li>
+                    </ul>
+                    <p>FALE COM UM VENDEDOR</p>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20Roteador%20Wi-Fi%20Inteligente.%20Qual%20o%20valor?" target="_blank" class="product-card">
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1wHZt1B8wSXAIO1LJeJV15Ac0S1t2TyhO" alt="Roteador Wi-Fi Inteligente"></div>
+                <div class="product-info">
+                    <h3>Roteador Wi-Fi Inteligente</h3>
+                    <ul class="specs-list">
+                        <li>Wi-Fi Mesh Compatível</li>
+                        <li>Gerenciamento via Aplicativo</li>
+                        <li>Conexão para Múltiplos Dispositivos</li>
+                    </ul>
+                    <p>FALE COM UM VENDEDOR</p>
+                </div>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20Roteador%20Longo%20Alcance.%20Qual%20o%20valor?" target="_blank" class="product-card">
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/12dUX4W4ZKm_BZtDyA2rwMuj00w4I-i--" alt="Roteador Longo Alcance"></div>
+                <div class="product-info">
+                    <h3>Roteador Longo Alcance</h3>
+                    <ul class="specs-list">
+                        <li>Sinal que Atravessa Paredes</li>
+                        <li>Dual Band (2.4GHz e 5GHz)</li>
+                        <li>Cobertura para Casa Toda</li>
+                    </ul>
+                    <p>FALE COM UM VENDEDOR</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="reviews-section">
+        <h2 class="section-title" style="margin-bottom: 20px;">O que nossos clientes dizem</h2>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Cheguei na loja cheio de dúvidas e o atendimento foi espetacular. Me explicaram a diferença de todos os aparelhos com muita paciência. Recomendo demais!"</p>
+                <p class="review-author">- Carlos Eduardo</p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Comprei o roteador e um aparelho pra TV. A rapidez na instalação e o funcionamento são perfeitos, não trava nada. Muito satisfeito com a compra."</p>
+                <p class="review-author">- Marcos Silva</p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">★★★★☆</div>
+                <p class="review-text">"Pesquisei muito na Santa Efigênia e aqui foi onde encontrei o preço mais justo sem enrolação. Aparelho original e funcionando liso. Voltarei para comprar outro!"</p>
+                <p class="review-author">- Rafael Oliveira</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-item">
+                <h4>🔒 Compra 100% Segura</h4>
+                <p>Priorizamos a sua segurança. Trabalhamos apenas com equipamentos originais e testados para garantir o melhor desempenho na sua casa.</p>
+            </div>
+            <div class="footer-item">
+                <h4>📍 Nossa Loja Física</h4>
+                <p>Galeria São Pedro<br>R. Aurora, 178 - Loja 10<br>Santa Ifigênia, São Paulo - SP, 01209-000<br>Venha nos fazer uma visita!</p>
+            </div>
+            <div class="footer-item">
+                <h4>🛠️ Garantia e Suporte</h4>
+                <p>Oferecemos garantia contra defeitos de fabricação e suporte especializado pós-venda para te ajudar com qualquer configuração.</p>
+            </div>
+        </div>
+        <div class="footer-cta">
+            <h2 style="margin-bottom: 25px; text-transform: uppercase; color: #fff;">FALE CONOSCO AGORA MESMO!</h2>
+            <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="btn-whatsapp btn-pulse-green">
+                <svg><use href="#icon-whatsapp"></use></svg> CHAME NO WHATSAPP
+            </a>
+        </div>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="float-wa" title="Fale conosco no WhatsApp">
+        <svg><use href="#icon-whatsapp"></use></svg>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const modal = document.getElementById('exitModal');
+            const closeBtn = document.getElementById('closeModal');
+            let popupTriggered = false;
+            let idleTimer;
+
+            const showPopup = () => {
+                if (!popupTriggered) {
+                    modal.style.display = 'flex';
+                    popupTriggered = true; 
+                }
+            };
+
+            const resetIdleTimer = () => {
+                clearTimeout(idleTimer);
+                if (!popupTriggered) {
+                    idleTimer = setTimeout(showPopup, 45000); 
+                }
+            };
+
+            closeBtn.addEventListener('click', () => { modal.style.display = 'none'; });
+            window.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display = 'none'; } });
+            document.addEventListener('mouseout', (e) => { if (e.clientY < 0) showPopup(); });
+            
+            ['mousemove', 'keydown', 'scroll', 'click', 'touchstart'].forEach(evt => {
+                document.addEventListener(evt, resetIdleTimer);
+            });
+
+            resetIdleTimer();
+        });
+    </script>
+</body>
+</html>
