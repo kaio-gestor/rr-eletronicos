@@ -13,7 +13,7 @@
     <meta name="facebook-domain-verification" content="lqpfvgl9mr0zx32uepmwfrqxgh9mj1" />
     
     <meta name="description" content="Na Santa Tv encontra os melhores aparelhos: TV V20, HTV9, UniTv V10 e S1. Oferecemos Roteadores, Assistência técnica para TV box queimado e Planos para TV Android.">
-    <meta name="keywords" content="Santa Tv, TV V20, HTV9, UniTv V10, UniTv S1, roteadores, assistência técnica tv box, conserto tv box, planos tv box, tv android, Santa Ifigênia, entrega rápida sp">
+    <meta name="keywords" content="Santa Tv, TV V20, HTV9, UniTv V10, UniTv S1, roteadores, assistência técnica tv box, conserto tv box, planos tv box, tv android, Santa Ifigênia, entrega rápida sp, comprar tv box original">
     <meta name="author" content="Santa Tv">
     <meta name="robots" content="index, follow">
     <meta name="language" content="pt-BR">
@@ -23,7 +23,7 @@
     <meta property="og:url" content="https://santa-tv.netlify.app/"> 
     <meta property="og:title" content="Santa Tv - Venda, Planos e Assistência de Aparelhos">
     <meta property="og:description" content="Aparelhos originais (TV V20, HTV9, UniTv), Roteadores, Planos para TV Android e Assistência Técnica para todas as marcas. Fale connosco!">
-    <meta property="og:image" content="https://lh3.googleusercontent.com/d/1oqvOg_wzqdw95z13iJlyPWEr1boLGy59">
+    <meta property="og:image" content="https://santa-tv.netlify.app/logo.png">
     <meta property="og:site_name" content="Santa Tv">
     <meta property="og:locale" content="pt_BR">
 
@@ -31,7 +31,68 @@
     <meta name="twitter:url" content="https://santa-tv.netlify.app/">
     <meta name="twitter:title" content="Santa Tv - Venda, Planos e Assistência de Aparelhos">
     <meta name="twitter:description" content="Aparelhos originais (TV V20, HTV9, UniTv), Roteadores, Planos para TV Android e Assistência Técnica para todas as marcas.">
-    <meta name="twitter:image" content="https://lh3.googleusercontent.com/d/1oqvOg_wzqdw95z13iJlyPWEr1boLGy59">
+    <meta name="twitter:image" content="https://santa-tv.netlify.app/logo.png">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Santa Tv",
+      "image": "https://santa-tv.netlify.app/logo.png",
+      "@id": "https://santa-tv.netlify.app/",
+      "url": "https://santa-tv.netlify.app/",
+      "telephone": "+5511984865393",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Aurora, 178 - Loja 10, Galeria São Pedro",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "01209-000",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Os aparelhos precisam de antena para funcionar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não! Todos os nossos aparelhos funcionam 100% via internet (Wi-Fi ou cabo de rede). Recomendamos uma conexão mínima de 15 Mega de velocidade."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tem garantia comprando na loja física?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, oferecemos garantia contra defeitos de fabricação e todo o suporte especializado pós-venda diretamente na nossa loja na Santa Ifigênia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funciona a assistência técnica para TV Box?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Consertamos aparelhos queimados, travados ou desatualizados de diversas marcas. Faça um orçamento gratuito através do nosso WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês fazem envio para outras cidades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! Realizamos entregas rápidas via motoboy para São Paulo e enviamos para todo o Brasil. Consulte as condições com o nosso vendedor."
+          }
+        }
+      ]
+    }
+    </script>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
     <style>
@@ -51,7 +112,7 @@
         html { scroll-behavior: smooth; scroll-padding-top: 90px; }
         body { background: linear-gradient(135deg, var(--bg-dark) 0%, #000000 100%); color: var(--text-light); overflow-x: hidden; line-height: 1.6; touch-action: manipulation; }
 
-        /* --- Animações Gerais --- */
+        /* --- Animações --- */
         @keyframes fadeInDown { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes pulse-glow-green { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
         @keyframes pulse-glow-bege { 0% { box-shadow: 0 0 0 0 rgba(217, 208, 193, 0.5); } 70% { box-shadow: 0 0 0 12px rgba(217, 208, 193, 0); } 100% { box-shadow: 0 0 0 0 rgba(217, 208, 193, 0); } }
@@ -138,28 +199,39 @@
             background: var(--bg-card); border-radius: 15px; overflow: hidden;
             text-decoration: none; color: var(--text-light); transition: transform 0.4s, box-shadow 0.4s;
             border: 1px solid rgba(217, 208, 193, 0.05); display: flex; flex-direction: column;
+            text-align: left;
         }
         .product-card:hover { transform: translateY(-12px); box-shadow: 0 15px 35px rgba(0,0,0,0.6), 0 0 15px rgba(193, 39, 45, 0.3); border-color: rgba(193, 39, 45, 0.6); }
         .product-image-wrapper { height: 260px; background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; padding: 20px; }
         .product-card img { max-width: 100%; max-height: 100%; object-fit: contain; transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); filter: drop-shadow(0 10px 10px rgba(0,0,0,0.5)); }
         .product-card:hover img { transform: scale(1.1); }
         
-        .product-info { padding: 20px 25px 25px; flex-grow: 1; display: flex; flex-direction: column; text-align: left; }
-        .product-info h3 { font-size: 22px; margin-bottom: 12px; color: #fff; text-align: center; }
+        .product-info { padding: 20px 25px 25px; flex-grow: 1; display: flex; flex-direction: column; }
+        .product-info h3 { font-size: 24px; margin-bottom: 5px; color: #fff; text-align: center; }
+        .product-desc { font-size: 14px; color: #aaa; margin-bottom: 15px; text-align: center; line-height: 1.4; }
         
-        .specs-list { list-style: none; margin-bottom: 20px; flex-grow: 1; font-size: 14px; color: #bbb; }
-        .specs-list li { margin-bottom: 6px; display: flex; align-items: flex-start; gap: 8px; }
-        .specs-list li::before { content: '✓'; color: var(--whatsapp-green); font-weight: bold; }
+        .specs-list { list-style: none; margin-bottom: 20px; flex-grow: 1; font-size: 14px; color: #ddd; }
+        .specs-list li { margin-bottom: 8px; display: flex; align-items: flex-start; gap: 8px; }
+        .specs-list li::before { content: '✓'; color: var(--whatsapp-green); font-weight: bold; font-size: 16px; }
         
-        .product-info p { font-size: 15px; color: var(--text-light); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; text-align: center; background: rgba(193, 39, 45, 0.2); padding: 12px; border-radius: 8px; border: 1px solid rgba(193, 39, 45, 0.4); transition: 0.3s; }
-        .product-card:hover .product-info p { background: var(--whatsapp-green); color: #fff; border-color: var(--whatsapp-green); }
+        .product-info p.cta-text { font-size: 15px; color: var(--text-light); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; text-align: center; background: rgba(193, 39, 45, 0.2); padding: 12px; border-radius: 8px; border: 1px solid rgba(193, 39, 45, 0.4); transition: 0.3s; margin-top: auto; }
+        .product-card:hover .product-info p.cta-text { background: var(--whatsapp-green); color: #fff; border-color: var(--whatsapp-green); }
+
+        /* --- FAQ Section (SEO/Rich Snippets) --- */
+        .faq-section { padding: 60px 5% 80px; max-width: 900px; margin: 0 auto; }
+        .faq-item { background: var(--bg-card); border: 1px solid rgba(217, 208, 193, 0.1); border-radius: 10px; margin-bottom: 15px; overflow: hidden; }
+        .faq-item summary { padding: 20px; font-size: 18px; font-weight: bold; color: #fff; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: '+'; color: var(--logo-red); font-size: 24px; font-weight: bold; }
+        .faq-item[open] summary::after { content: '-'; }
+        .faq-item p { padding: 0 20px 20px; color: #bbb; line-height: 1.6; font-size: 15px; border-top: 1px solid rgba(255,255,255,0.05); margin-top: 10px; padding-top: 15px; }
 
         /* --- Avaliações --- */
         .reviews-section { padding: 40px 5% 80px; text-align: center; }
         .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
         .review-card { background: var(--bg-card); border-radius: 15px; padding: 30px; border: 1px solid rgba(217, 208, 193, 0.05); box-shadow: 0 10px 30px rgba(0,0,0,0.2); text-align: left; }
         .review-stars { color: var(--star-color); font-size: 20px; margin-bottom: 15px; letter-spacing: 2px; }
-        .review-text { font-size: 16px; font-style: italic; margin-bottom: 15px; color: #fff; }
+        .review-text { font-size: 16px; font-style: italic; margin-bottom: 15px; color: #fff; line-height: 1.6; }
         .review-author { font-size: 14px; color: var(--logo-red); font-weight: bold; text-transform: uppercase; }
 
         /* --- Modal --- */
@@ -199,8 +271,8 @@
             .exit-modal-content { padding: 30px 20px; }
             .exit-modal-content h2 { font-size: 26px; }
             
-            .product-info { text-align: center; }
-            .specs-list li { justify-content: center; text-align: left; }
+            .product-info h3 { text-align: left; }
+            .product-desc { text-align: left; }
         }
     </style>
 </head>
@@ -227,17 +299,17 @@
 
     <header>
         <div class="logo-container">
-            <img src="logo.png" alt="Santa Tv Logo">
+            <img src="logo.png" alt="Logo Santa Tv - Loja de Eletrônicos na Santa Ifigênia">
         </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#tv-boxes">Aparelhos TV</a></li>
-                <li><a href="#routers">Roteadores</a></li>
+                <li><a href="#faq">Dúvidas</a></li>
             </ul>
         </nav>
         <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="btn-whatsapp btn-pulse-green">
-            <svg><use href="#icon-whatsapp"></use></svg> Fale Connosco
+            <svg><use href="#icon-whatsapp"></use></svg> Fale Conosco
         </a>
     </header>
 
@@ -259,7 +331,7 @@
         </div>
         
         <div class="static-banner-wrapper">
-            <img src="banner-principal.png" alt="Banner Loja Física Santa Tv" class="static-banner">
+            <img src="banner-principal.png" alt="Banner Loja Física Santa Tv na Santa Ifigênia São Paulo" class="static-banner">
         </div>
     </section>
 
@@ -272,7 +344,7 @@
     </section>
 
     <section class="products-section" id="tv-boxes">
-        <h2 class="section-title">Aparelhos para TV</h2>
+        <h2 class="section-title">Aparelhos para TV Premium</h2>
         
         <div class="product-badge-wrapper">
             <span class="product-badge">🚀 Entrega Rápida em SP & Suporte Imediato via WhatsApp</span>
@@ -280,51 +352,59 @@
 
         <div class="product-grid">
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20aparelho%20TV%20V20.%20Qual%20o%20valor?" target="_blank" class="product-card">
-                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/15ZI5k-_msDP5NhNu7bTjS-9W7UUrq6UI" alt="TV V20"></div>
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/15ZI5k-_msDP5NhNu7bTjS-9W7UUrq6UI" alt="Aparelho TV V20 Original 4K - Comprar na Santa Ifigênia" loading="lazy"></div>
                 <div class="product-info">
                     <h3>TV V20</h3>
+                    <p class="product-desc">O modelo mais rápido da categoria, com processador de última geração para evitar travamentos.</p>
                     <ul class="specs-list">
-                        <li>Alta Qualidade de Imagem 4K</li>
-                        <li>Filmes e Séries Liberados</li>
-                        <li>Conexão Estável e Rápida</li>
+                        <li>Alta Qualidade de Imagem 4K e 8K</li>
+                        <li>Filmes, Séries e Esportes Liberados</li>
+                        <li>16GB de Armazenamento Interno</li>
+                        <li>Conexão Estável Wi-Fi Dual Band</li>
                     </ul>
-                    <p>FALE COM UM VENDEDOR</p>
+                    <p class="cta-text">FALE COM UM VENDEDOR</p>
                 </div>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20aparelho%20UniTv%20V10.%20Qual%20o%20valor?" target="_blank" class="product-card">
-                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1_gHEVkoJ-COKAliCLcjTfF474hCoNxc2" alt="UniTv V10"></div>
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1_gHEVkoJ-COKAliCLcjTfF474hCoNxc2" alt="TV Box UniTv V10 Sem Mensalidade - Preço Santa Tv" loading="lazy"></div>
                 <div class="product-info">
                     <h3>UniTv V10</h3>
+                    <p class="product-desc">Custo-benefício imbatível com sistema otimizado e interface super intuitiva para toda a família.</p>
                     <ul class="specs-list">
-                        <li>Sem Mensalidade</li>
+                        <li>Sem Mensalidade (Acesso Vitalício)</li>
                         <li>Sistema Fluido e Sem Travas</li>
+                        <li>Conteúdo Infantil e Documentários</li>
                         <li>Wi-Fi Dual Band Inteligente</li>
                     </ul>
-                    <p>FALE COM UM VENDEDOR</p>
+                    <p class="cta-text">FALE COM UM VENDEDOR</p>
                 </div>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20aparelho%20HTV9.%20Qual%20o%20valor?" target="_blank" class="product-card">
-                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1flpagMw2hzNw_1bF-HjsjqW_f6iX_YTT" alt="HTV9"></div>
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1flpagMw2hzNw_1bF-HjsjqW_f6iX_YTT" alt="TV Box HTV9 Original Lançamento - Loja de Eletrônicos SP" loading="lazy"></div>
                 <div class="product-info">
                     <h3>HTV9</h3>
+                    <p class="product-desc">O rei dos esportes e alta definição. Qualidade premium superando todas as expectativas do mercado.</p>
                     <ul class="specs-list">
-                        <li>Canais Esportivos e Futebol</li>
-                        <li>Resolução Ultra HD</li>
+                        <li>Canais Esportivos e Futebol ao Vivo</li>
+                        <li>Resolução Ultra HD Estável</li>
+                        <li>Comando de Voz Inteligente Integrado</li>
                         <li>Fácil Configuração Plug & Play</li>
                     </ul>
-                    <p>FALE COM UM VENDEDOR</p>
+                    <p class="cta-text">FALE COM UM VENDEDOR</p>
                 </div>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20aparelho%20UniTv%20S1.%20Qual%20o%20valor?" target="_blank" class="product-card">
-                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1JvLNpg5a1x6utttRQGAWJdntFyuGJ4a5" alt="UniTv S1"></div>
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1JvLNpg5a1x6utttRQGAWJdntFyuGJ4a5" alt="Aparelho UniTv S1 Compacto Original - Santa Tv" loading="lazy"></div>
                 <div class="product-info">
                     <h3>UniTv S1</h3>
+                    <p class="product-desc">Design compacto e poderoso, ideal para levar em viagens ou para ambientes minimalistas.</p>
                     <ul class="specs-list">
-                        <li>Modelo Premium e Compacto</li>
-                        <li>Conteúdo 18+ Opcional</li>
-                        <li>Atualizações Automáticas</li>
+                        <li>Modelo Premium e Super Compacto</li>
+                        <li>Conteúdo 18+ Opcional c/ Senha</li>
+                        <li>Atualizações de Sistema Automáticas</li>
+                        <li>Sistema Operacional Android Rápido</li>
                     </ul>
-                    <p>FALE COM UM VENDEDOR</p>
+                    <p class="cta-text">FALE COM UM VENDEDOR</p>
                 </div>
             </a>
         </div>
@@ -334,42 +414,69 @@
         <h2 class="section-title">Roteadores de Alta Velocidade</h2>
         <div class="product-grid">
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20Roteador%20Alta%20Performance.%20Qual%20o%20valor?" target="_blank" class="product-card">
-                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1kx4-eJs5Kn0vNXQ_KQfddiULCOPbRzyw" alt="Roteador Alta Performance"></div>
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1kx4-eJs5Kn0vNXQ_KQfddiULCOPbRzyw" alt="Roteador de Alta Performance para Jogos e 4K" loading="lazy"></div>
                 <div class="product-info">
                     <h3>Roteador Alta Performance</h3>
+                    <p class="product-desc">Potência extrema para quem precisa de internet sem oscilações em tarefas pesadas.</p>
                     <ul class="specs-list">
-                        <li>Ideal para Jogos e Streaming 4K</li>
-                        <li>Tecnologia Gigabit Ethernet</li>
-                        <li>Antenas de Alto Ganho</li>
+                        <li>Ideal para Jogos Online e Streaming 4K</li>
+                        <li>Tecnologia Gigabit Ethernet Completa</li>
+                        <li>Antenas de Alto Ganho de Sinal</li>
                     </ul>
-                    <p>FALE COM UM VENDEDOR</p>
+                    <p class="cta-text">FALE COM UM VENDEDOR</p>
                 </div>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20Roteador%20Wi-Fi%20Inteligente.%20Qual%20o%20valor?" target="_blank" class="product-card">
-                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1wHZt1B8wSXAIO1LJeJV15Ac0S1t2TyhO" alt="Roteador Wi-Fi Inteligente"></div>
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/1wHZt1B8wSXAIO1LJeJV15Ac0S1t2TyhO" alt="Roteador Wi-Fi Inteligente Mesh - Loja Santa Tv" loading="lazy"></div>
                 <div class="product-info">
                     <h3>Roteador Wi-Fi Inteligente</h3>
+                    <p class="product-desc">A distribuição de rede perfeita para quem tem muitos celulares e TVs conectados ao mesmo tempo.</p>
                     <ul class="specs-list">
-                        <li>Wi-Fi Mesh Compatível</li>
-                        <li>Gerenciamento via Aplicativo</li>
-                        <li>Conexão para Múltiplos Dispositivos</li>
+                        <li>Compatível com Tecnologia Wi-Fi Mesh</li>
+                        <li>Gestão Fácil via Aplicativo de Celular</li>
+                        <li>Estabilidade para Múltiplos Dispositivos</li>
                     </ul>
-                    <p>FALE COM UM VENDEDOR</p>
+                    <p class="cta-text">FALE COM UM VENDEDOR</p>
                 </div>
             </a>
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Estava%20no%20site%20e%20tenho%20interesse%20no%20Roteador%20Longo%20Alcance.%20Qual%20o%20valor?" target="_blank" class="product-card">
-                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/12dUX4W4ZKm_BZtDyA2rwMuj00w4I-i--" alt="Roteador Longo Alcance"></div>
+                <div class="product-image-wrapper"><img src="https://lh3.googleusercontent.com/d/12dUX4W4ZKm_BZtDyA2rwMuj00w4I-i--" alt="Roteador de Longo Alcance para Casa Toda" loading="lazy"></div>
                 <div class="product-info">
                     <h3>Roteador Longo Alcance</h3>
+                    <p class="product-desc">Fim dos pontos cegos. Sinal que alcança os quartos mais distantes e até o quintal.</p>
                     <ul class="specs-list">
-                        <li>Sinal que Atravessa Paredes</li>
-                        <li>Dual Band (2.4GHz e 5GHz)</li>
-                        <li>Cobertura para Casa Toda</li>
+                        <li>Sinal Forte que Atravessa Paredes</li>
+                        <li>Conexão Dual Band (2.4GHz e 5GHz)</li>
+                        <li>Cobertura Total para a Casa ou Escritório</li>
                     </ul>
-                    <p>FALE COM UM VENDEDOR</p>
+                    <p class="cta-text">FALE COM UM VENDEDOR</p>
                 </div>
             </a>
         </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <h2 class="section-title">Dúvidas Frequentes</h2>
+        
+        <details class="faq-item">
+            <summary>Os aparelhos precisam de antena para funcionar?</summary>
+            <p>Não! Todos os nossos aparelhos (TV V20, HTV9, etc.) funcionam 100% via internet, seja por Wi-Fi ou cabo de rede conectado diretamente ao seu roteador. Recomendamos uma conexão mínima de 15 Mega de velocidade para uma experiência sem travamentos.</p>
+        </details>
+        
+        <details class="faq-item">
+            <summary>Tem garantia comprando na loja física da Santa Tv?</summary>
+            <p>Com certeza. Além de comprar equipamentos originais, você tem garantia contra defeitos de fabricação e todo o suporte especializado pós-venda diretamente na nossa loja, localizada na Galeria São Pedro, Santa Ifigênia.</p>
+        </details>
+        
+        <details class="faq-item">
+            <summary>Como funciona a assistência técnica para TV Box?</summary>
+            <p>A Santa Tv é especialista. Se o seu TV Box queimou, ficou travado na tela inicial ou não atualiza mais, traga para a nossa loja. Consertamos diversas marcas do mercado. Se preferir, faça um orçamento preliminar gratuito através do nosso WhatsApp.</p>
+        </details>
+
+        <details class="faq-item">
+            <summary>Vocês fazem envio para outras cidades?</summary>
+            <p>Sim! Para clientes na Grande São Paulo, realizamos entregas rápidas no mesmo dia via motoboy. Para outras cidades e estados, enviamos pelos Correios de forma rápida e segura. Consulte as condições de frete com o nosso vendedor no botão abaixo.</p>
+        </details>
     </section>
 
     <section class="reviews-section">
