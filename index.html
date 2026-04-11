@@ -561,7 +561,7 @@
             </a>
             
             <p style="margin-top: 30px; font-size: 13px;">
-                <a href="#" id="openPrivacy" style="color: #888; text-decoration: underline; transition: 0.3s;">Termos de Uso e Política de Privacidade</a>
+                <a href="#politica-de-privacidade" id="openPrivacy" style="color: #888; text-decoration: underline; transition: 0.3s;">Termos de Uso e Política de Privacidade</a>
             </p>
         </div>
         
@@ -576,6 +576,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // Lógica do Modal de Exit Intent
             const modal = document.getElementById('exitModal');
             const closeBtn = document.getElementById('closeModal');
             let popupTriggered = false;
@@ -596,7 +597,6 @@
             };
 
             closeBtn.addEventListener('click', () => { modal.style.display = 'none'; });
-            
             document.addEventListener('mouseout', (e) => { if (e.clientY < 0) showPopup(); });
             
             ['mousemove', 'keydown', 'scroll', 'click', 'touchstart'].forEach(evt => {
@@ -605,24 +605,34 @@
 
             resetIdleTimer();
 
-            // Lógica do Modal da Política de Privacidade
+            // Lógica do Modal da Política de Privacidade (Aprovada por Ads)
             const privacyModal = document.getElementById('privacyModal');
             const openPrivacyBtn = document.getElementById('openPrivacy');
             const closePrivacyBtn = document.getElementById('closePrivacy');
 
+            // Verifica se a página foi carregada diretamente com o link #politica-de-privacidade
+            if (window.location.hash === '#politica-de-privacidade') {
+                privacyModal.style.display = 'flex';
+            }
+
             openPrivacyBtn.addEventListener('click', (e) => {
-                e.preventDefault();
+                // Sem e.preventDefault() para permitir que o #politica-de-privacidade vá para o URL
                 privacyModal.style.display = 'flex';
             });
 
             closePrivacyBtn.addEventListener('click', () => {
                 privacyModal.style.display = 'none';
+                // Limpa o hash do URL ao fechar para manter a navegação limpa
+                history.replaceState(null, null, window.location.pathname + window.location.search);
             });
 
-            // Fechar os modais ao clicar fora deles
+            // Fechar os modais ao clicar no fundo escuro
             window.addEventListener('click', (e) => { 
                 if (e.target === modal) { modal.style.display = 'none'; }
-                if (e.target === privacyModal) { privacyModal.style.display = 'none'; }
+                if (e.target === privacyModal) { 
+                    privacyModal.style.display = 'none';
+                    history.replaceState(null, null, window.location.pathname + window.location.search);
+                }
             });
         });
     </script>
