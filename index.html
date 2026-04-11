@@ -12,7 +12,7 @@
     
     <meta name="facebook-domain-verification" content="lqpfvgl9mr0zx32uepmwfrqxgh9mj1" />
     
-    <meta name="description" content="Na Santa Tv encontra os melhores aparelhos: TV V20, HTV9, UniTv V10 e S1. Oferecemos Roteadores, Assistência técnica para TV box queimado e Planos para TV Android.">
+    <meta name="description" content="Na Santa Tv você encontra os melhores aparelhos: TV V20, HTV9, UniTv V10 e S1. Oferecemos Roteadores, Assistência técnica para TV box queimado e Planos para TV Android.">
     <meta name="keywords" content="Santa Tv, TV V20, HTV9, UniTv V10, UniTv S1, roteadores, assistência técnica tv box, conserto tv box, planos tv box, tv android, Santa Ifigênia, entrega rápida sp, comprar tv box original">
     <meta name="author" content="Santa Tv">
     <meta name="robots" content="index, follow">
@@ -22,7 +22,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://santa-tv.netlify.app/"> 
     <meta property="og:title" content="Santa Tv - Venda, Planos e Assistência de Aparelhos">
-    <meta property="og:description" content="Aparelhos originais (TV V20, HTV9, UniTv), Roteadores, Planos para TV Android e Assistência Técnica para todas as marcas. Fale connosco!">
+    <meta property="og:description" content="Aparelhos originais (TV V20, HTV9, UniTv), Roteadores, Planos para TV Android e Assistência Técnica para todas as marcas. Fale conosco!">
     <meta property="og:image" content="https://santa-tv.netlify.app/logo.png">
     <meta property="og:site_name" content="Santa Tv">
     <meta property="og:locale" content="pt_BR">
@@ -162,7 +162,7 @@
         .static-banner { width: 100%; height: auto; object-fit: cover; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(193, 39, 45, 0.4); border: 2px solid rgba(193, 39, 45, 0.5); transition: transform 0.5s ease, box-shadow 0.5s ease; }
         .static-banner:hover { transform: scale(1.02); box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 40px rgba(193, 39, 45, 0.6); }
 
-        /* --- Middle CTA --- */
+        /* --- Middle CTA (Localização Dinâmica) --- */
         .middle-cta {
             text-align: center; padding: 90px 5%; background: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80') center/cover fixed;
             position: relative; border-top: 2px solid var(--logo-red); border-bottom: 2px solid var(--logo-red);
@@ -171,6 +171,8 @@
         .middle-cta-content { position: relative; z-index: 1; }
         .middle-cta h2 { font-size: 38px; margin-bottom: 15px; text-transform: uppercase; color: #fff; }
         .middle-cta p { font-size: 20px; margin-bottom: 35px; color: var(--text-light); }
+        
+        .cta-buttons-wrapper { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 10px; }
         
         .btn-location {
             background: var(--secondary-cta); color: var(--secondary-cta-text); padding: 16px 38px; border-radius: 35px;
@@ -181,6 +183,14 @@
         .btn-location::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(to right, transparent, rgba(255,255,255,0.6), transparent); transform: skewX(-25deg); }
         .btn-location:hover { background: #fff; transform: translateY(-4px); box-shadow: 0 8px 25px rgba(0,0,0,0.7), 0 0 10px rgba(217, 208, 193, 0.3); animation: none; }
         .btn-location:hover::after { animation: btnShine 0.75s forwards; }
+
+        .btn-maps {
+            background: transparent; color: #fff; padding: 16px 38px; border-radius: 35px;
+            text-decoration: none; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; font-size: 1.15rem;
+            border: 2px solid var(--logo-red); box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            transition: all 0.3s ease; position: relative; overflow: hidden;
+        }
+        .btn-maps:hover { background: var(--logo-red); transform: translateY(-4px); box-shadow: 0 8px 25px rgba(193, 39, 45, 0.5); }
 
         /* --- Products Section --- */
         .products-section { padding: 80px 5%; text-align: center; }
@@ -217,7 +227,7 @@
         .product-info p.cta-text { font-size: 15px; color: var(--text-light); font-weight: bold; text-transform: uppercase; letter-spacing: 1px; text-align: center; background: rgba(193, 39, 45, 0.2); padding: 12px; border-radius: 8px; border: 1px solid rgba(193, 39, 45, 0.4); transition: 0.3s; margin-top: auto; }
         .product-card:hover .product-info p.cta-text { background: var(--whatsapp-green); color: #fff; border-color: var(--whatsapp-green); }
 
-        /* --- FAQ Section (SEO/Rich Snippets) --- */
+        /* --- FAQ Section --- */
         .faq-section { padding: 60px 5% 80px; max-width: 900px; margin: 0 auto; }
         .faq-item { background: var(--bg-card); border: 1px solid rgba(217, 208, 193, 0.1); border-radius: 10px; margin-bottom: 15px; overflow: hidden; }
         .faq-item summary { padding: 20px; font-size: 18px; font-weight: bold; color: #fff; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
@@ -234,9 +244,15 @@
         .review-text { font-size: 16px; font-style: italic; margin-bottom: 15px; color: #fff; line-height: 1.6; }
         .review-author { font-size: 14px; color: var(--logo-red); font-weight: bold; text-transform: uppercase; }
 
-        /* --- Modal --- */
-        .exit-modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(5px); z-index: 9999; display: none; align-items: center; justify-content: center; }
+        /* --- Modais --- */
+        .exit-modal-overlay, .privacy-modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(5px); z-index: 9999; display: none; align-items: center; justify-content: center; }
         .exit-modal-content { background: #1A1A1B; border: 2px solid var(--logo-red); border-radius: 20px; padding: 40px; max-width: 550px; text-align: center; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(193, 39, 45, 0.3); animation: popupFadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; margin: 20px; }
+        
+        .privacy-modal-content { background: #1A1A1B; border: 1px solid var(--logo-red); border-radius: 15px; padding: 30px; max-width: 700px; width: 90%; max-height: 80vh; overflow-y: auto; position: relative; text-align: left; box-shadow: 0 20px 50px rgba(0,0,0,0.8); animation: popupFadeIn 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+        .privacy-modal-content h3 { color: #fff; margin-bottom: 20px; text-transform: uppercase; font-size: 22px; border-bottom: 2px solid var(--logo-red); padding-bottom: 10px; }
+        .privacy-text p { color: #ccc; font-size: 14px; margin-bottom: 15px; line-height: 1.6; }
+        .privacy-text strong { color: var(--text-light); }
+        
         .close-btn { position: absolute; top: 15px; right: 20px; font-size: 28px; color: var(--text-light); cursor: pointer; transition: color 0.3s; line-height: 1; padding: 10px; }
         .close-btn:hover { color: var(--logo-red); }
         .exit-modal-content h2 { font-size: 32px; color: #fff; margin-bottom: 15px; }
@@ -250,6 +266,10 @@
         .footer-item p { color: #aaa; font-size: 14px; line-height: 1.6; }
         .footer-cta { text-align: center; padding: 40px 5%; background: rgba(0,0,0,0.4); }
         
+        /* Barra de Rodapé Inferior (CNPJ) */
+        .footer-bottom { background: #0b0b0c; padding: 20px 5%; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); }
+        .footer-bottom p { color: #666; font-size: 13px; }
+
         .float-wa { position: fixed; bottom: 30px; right: 30px; background: var(--whatsapp-green); color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 6px 20px rgba(0,0,0,0.5); z-index: 1000; text-decoration: none; transition: all 0.3s ease; }
         .float-wa:hover { transform: scale(1.1) rotate(-10deg); box-shadow: 0 8px 25px rgba(0,0,0,0.6); }
         .float-wa svg { width: 32px; height: 32px; fill: white; }
@@ -290,10 +310,24 @@
         <div class="exit-modal-content">
             <span class="close-btn" id="closeModal">×</span>
             <h2>Já vai.....?? <span>🤔</span></h2>
-            <p>Cansado de aparelhos que não funcionam? Aqui na <strong>Santa Tv</strong> encontra os melhores com preço justo. Se eu fosse a si aproveitava!</p>
+            <p>Cansado de aparelhos que não funcionam? Aqui na <strong>Santa Tv</strong> você encontra os melhores com preço justo. Se eu fosse você aproveitava!</p>
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vi%20o%20aviso%20no%20site%20e%20não%20quero%20perder%20esta%20chance!" target="_blank" class="btn-whatsapp btn-pulse-green" style="font-size: 1.2rem; padding: 15px 35px; width: 100%;">
                 <svg><use href="#icon-whatsapp"></use></svg> APROVEITAR AGORA
             </a>
+        </div>
+    </div>
+
+    <div class="privacy-modal-overlay" id="privacyModal">
+        <div class="privacy-modal-content">
+            <span class="close-btn" id="closePrivacy">×</span>
+            <h3>Política de Privacidade</h3>
+            <div class="privacy-text">
+                <p><strong>1. Coleta de Dados:</strong> A Santa Tv coleta informações (como nome e telefone) apenas quando você entra em contato de forma voluntária através dos nossos botões de WhatsApp para solicitar orçamentos, tirar dúvidas ou fechar compras.</p>
+                <p><strong>2. Uso das Informações:</strong> Seus dados são utilizados exclusivamente para o atendimento ao cliente, envio de propostas, formalização de pedidos e suporte técnico pós-venda.</p>
+                <p><strong>3. Proteção e Compartilhamento:</strong> Comprometemo-nos a não vender, alugar ou repassar seus dados pessoais a terceiros. Garantimos a confidencialidade das suas informações em conformidade com a Lei Geral de Proteção de Dados (LGPD).</p>
+                <p><strong>4. Cookies e Rastreamento:</strong> Utilizamos cookies e ferramentas de análise (como Google Analytics, Google Tag Manager e Pixel do Facebook) apenas para entender o comportamento geral de navegação em nosso site e otimizar nossas campanhas de publicidade, de forma anônima.</p>
+                <p><strong>5. Contato e Exclusão:</strong> Para solicitar a exclusão de qualquer dado do nosso histórico de atendimento, basta nos enviar uma mensagem direta no nosso WhatsApp oficial.</p>
+            </div>
         </div>
     </div>
 
@@ -339,7 +373,12 @@
         <div class="middle-cta-content">
             <h2>VISITE A NOSSA LOJA HOJE MESMO!</h2>
             <p>A melhor tecnologia com o melhor atendimento da região.</p>
-            <a href="https://share.google/C5IjDM7eBbhmcm5Ye" target="_blank" class="btn-location">ENCONTRE-NOS AGORA! ></a>
+            
+            <div class="cta-buttons-wrapper">
+                <a href="https://share.google/C5IjDM7eBbhmcm5Ye" target="_blank" class="btn-location">ENCONTRE-NOS AGORA! ></a>
+                <a href="https://share.google/C5IjDM7eBbhmcm5Ye" target="_blank" class="btn-maps">📍 ABRIR NO GOOGLE MAPS</a>
+            </div>
+            
         </div>
     </section>
 
@@ -433,7 +472,7 @@
                     <p class="product-desc">A distribuição de rede perfeita para quem tem muitos celulares e TVs conectados ao mesmo tempo.</p>
                     <ul class="specs-list">
                         <li>Compatível com Tecnologia Wi-Fi Mesh</li>
-                        <li>Gestão Fácil via Aplicativo de Celular</li>
+                        <li>Gerenciamento via Aplicativo de Celular</li>
                         <li>Estabilidade para Múltiplos Dispositivos</li>
                     </ul>
                     <p class="cta-text">FALE COM UM VENDEDOR</p>
@@ -484,7 +523,7 @@
         <div class="reviews-grid">
             <div class="review-card">
                 <div class="review-stars">★★★★★</div>
-                <p class="review-text">"Cheguei à loja cheio de dúvidas e o atendimento foi espetacular. Explicaram-me a diferença de todos os aparelhos com muita paciência. Recomendo imenso!"</p>
+                <p class="review-text">"Cheguei na loja cheio de dúvidas e o atendimento foi espetacular. Me explicaram a diferença de todos os aparelhos com muita paciência. Recomendo demais!"</p>
                 <p class="review-author">- Carlos Eduardo</p>
             </div>
             <div class="review-card">
@@ -494,7 +533,7 @@
             </div>
             <div class="review-card">
                 <div class="review-stars">★★★★☆</div>
-                <p class="review-text">"Pesquisei muito na Santa Efigênia e aqui foi onde encontrei o preço mais justo sem enrolação. Aparelho original e a funcionar liso. Voltarei para comprar outro!"</p>
+                <p class="review-text">"Pesquisei muito na Santa Efigênia e aqui foi onde encontrei o preço mais justo sem enrolação. Aparelho original e funcionando liso. Voltarei para comprar outro!"</p>
                 <p class="review-author">- Rafael Oliveira</p>
             </div>
         </div>
@@ -508,22 +547,30 @@
             </div>
             <div class="footer-item">
                 <h4>📍 Nossa Loja Física</h4>
-                <p>Galeria São Pedro<br>R. Aurora, 178 - Loja 10<br>Santa Ifigênia, São Paulo - SP, 01209-000<br>Venha fazer-nos uma visita!</p>
+                <p>Galeria São Pedro<br>R. Aurora, 178 - Loja 10<br>Santa Ifigênia, São Paulo - SP, 01209-000<br>Venha nos fazer uma visita!</p>
             </div>
             <div class="footer-item">
                 <h4>🛠️ Garantia e Suporte</h4>
-                <p>Oferecemos garantia contra defeitos de fabrico e suporte especializado pós-venda para o ajudar com qualquer configuração.</p>
+                <p>Oferecemos garantia contra defeitos de fabricação e suporte especializado pós-venda para te ajudar com qualquer configuração.</p>
             </div>
         </div>
         <div class="footer-cta">
-            <h2 style="margin-bottom: 25px; text-transform: uppercase; color: #fff;">FALE CONNOSCO AGORA MESMO!</h2>
+            <h2 style="margin-bottom: 25px; text-transform: uppercase; color: #fff;">FALE CONOSCO AGORA MESMO!</h2>
             <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="btn-whatsapp btn-pulse-green">
                 <svg><use href="#icon-whatsapp"></use></svg> CHAME NO WHATSAPP
             </a>
+            
+            <p style="margin-top: 30px; font-size: 13px;">
+                <a href="#" id="openPrivacy" style="color: #888; text-decoration: underline; transition: 0.3s;">Termos de Uso e Política de Privacidade</a>
+            </p>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>Santa Tv Eletrônicos - Todos os direitos reservados | CNPJ: 59.310.985/0001-02</p>
         </div>
     </footer>
 
-    <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="float-wa" title="Fale connosco no WhatsApp">
+    <a href="https://api.whatsapp.com/send?phone=5511984865393&text=Olá!%20Vim%20pela%20Landing%20Page%20e%20gostaria%20de%20falar%20com%20um%20vendedor." target="_blank" class="float-wa" title="Fale conosco no WhatsApp">
         <svg><use href="#icon-whatsapp"></use></svg>
     </a>
 
@@ -549,7 +596,7 @@
             };
 
             closeBtn.addEventListener('click', () => { modal.style.display = 'none'; });
-            window.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display = 'none'; } });
+            
             document.addEventListener('mouseout', (e) => { if (e.clientY < 0) showPopup(); });
             
             ['mousemove', 'keydown', 'scroll', 'click', 'touchstart'].forEach(evt => {
@@ -557,6 +604,26 @@
             });
 
             resetIdleTimer();
+
+            // Lógica do Modal da Política de Privacidade
+            const privacyModal = document.getElementById('privacyModal');
+            const openPrivacyBtn = document.getElementById('openPrivacy');
+            const closePrivacyBtn = document.getElementById('closePrivacy');
+
+            openPrivacyBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                privacyModal.style.display = 'flex';
+            });
+
+            closePrivacyBtn.addEventListener('click', () => {
+                privacyModal.style.display = 'none';
+            });
+
+            // Fechar os modais ao clicar fora deles
+            window.addEventListener('click', (e) => { 
+                if (e.target === modal) { modal.style.display = 'none'; }
+                if (e.target === privacyModal) { privacyModal.style.display = 'none'; }
+            });
         });
     </script>
 </body>
